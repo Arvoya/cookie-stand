@@ -37,20 +37,16 @@ h2 {
 
 section {
   background-color: #E79692;
-  width: fit-content;
-  border-radius: 4px;
-  border-color: black;
-  display: inline-block;
-  margin: 15px;
   padding: 10px;
+  display: inline-block;
 }
 
-ul {
-  display: inline;
+table {
   background-color: #E79692;
+  size: 50%;
 }
 
-li {
-  background-color: #E79692; 
-  margin: 3px;
-  }
+td {
+  padding-bottom: 10px;
+  padding-right: 5px;
+}
