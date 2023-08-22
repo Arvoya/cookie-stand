@@ -37,20 +37,27 @@ h2 {
 
 section {
   background-color: #E79692;
-  width: fit-content;
-  border-radius: 4px;
-  border-color: black;
-  display: inline-block;
-  margin: 15px;
   padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
 }
 
-ul {
-  display: inline;
+td {
+  padding-bottom: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
   background-color: #E79692;
 }
-
-li {
-  background-color: #E79692; 
-  margin: 3px;
-  }
+tr{
+  background-color: #E79692;
+}
+th {
+  background-color: #E79692;
+  position:relative;
+  bottom: 0%;
+  width: 30px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-weight: 700;
+}
