@@ -1,0 +1,56 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
+/*
+* * COLORS
+Base Color: #E7E092
+Accent Color: #E79692
+White
+Dark grey: #585646
+light grey: #fcfcfa
+
+*/
+
+
+* {
+  background-color: #E7E092;
+}
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size:xx-large;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: larger;
+  margin: 5px;
+  margin-top: 20px;
+}
+#city-info {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+  background-color: #E79692;
+  width: fit-content;
+  border-radius: 4px;
+  border-color: black;
+  display: inline-block;
+  margin: 15px;
+  padding: 10px;
+}
+
+ul {
+  display: inline;
+  background-color: #E79692;
+}
+
+li {
+  background-color: #E79692; 
+  margin: 3px;
+  }

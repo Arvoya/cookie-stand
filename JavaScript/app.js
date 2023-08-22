@@ -36,7 +36,7 @@ let Seattle = {
       this.custArr.push(this.customer);
   },
   getCookies: function(a, b) {
-    this.cookies.push(this.avgCookie * this.customer);
+    this.cookies.push(Math.round(this.avgCookie * this.customer));
   },
   
   //* final function to run/render it all
@@ -48,9 +48,11 @@ let Seattle = {
       }
 
       //* Create elements and Display the values
+      let sectionBreak = document.createElement('section');
+      cityInfo.appendChild(sectionBreak);
       let customerUL = document.createElement('ul');
       customerUL.textContent = `${this.name}`;
-      cityInfo.appendChild(customerUL);
+      sectionBreak.appendChild(customerUL);
 
       for (let i = 0; i < hours.length; i++) {
         let customerLi = document.createElement('li');
@@ -62,6 +64,7 @@ let Seattle = {
       let customerTotal = document.createElement("li");
       customerTotal.innerText = `Total: ${this.total} cookies`;
       customerUL.appendChild(customerTotal);
+
       
   }
     
@@ -87,7 +90,7 @@ let Tokyo = {
       this.custArr.push(this.customer);
   },
   getCookies: function(a, b) {
-    this.cookies.push(this.avgCookie * this.customer);
+    this.cookies.push(Math.round(this.avgCookie * this.customer));
   },
   
   //* final function to run/render it all
@@ -99,9 +102,11 @@ let Tokyo = {
       }
 
       //* Create elements and Display the values
+      let sectionBreak = document.createElement('section');
+      cityInfo.appendChild(sectionBreak);
       let customerUL = document.createElement('ul');
       customerUL.textContent = `${this.name}`;
-      cityInfo.appendChild(customerUL);
+      sectionBreak.appendChild(customerUL);
 
       for (let i = 0; i < hours.length; i++) {
         let customerLi = document.createElement('li');
@@ -113,6 +118,8 @@ let Tokyo = {
       let customerTotal = document.createElement("li");
       customerTotal.innerText = `Total: ${this.total} cookies`;
       customerUL.appendChild(customerTotal);
+
+      
       
   }
     
@@ -138,7 +145,7 @@ let Dubai = {
       this.custArr.push(this.customer);
   },
   getCookies: function(a, b) {
-    this.cookies.push(this.avgCookie * this.customer);
+    this.cookies.push(Math.round(this.avgCookie * this.customer));
   },
   
   //* final function to run/render it all
@@ -150,9 +157,11 @@ let Dubai = {
       }
 
       //* Create elements and Display the values
+      let sectionBreak = document.createElement('section');
+      cityInfo.appendChild(sectionBreak);
       let customerUL = document.createElement('ul');
       customerUL.textContent = `${this.name}`;
-      cityInfo.appendChild(customerUL);
+      sectionBreak.appendChild(customerUL);
 
       for (let i = 0; i < hours.length; i++) {
         let customerLi = document.createElement('li');
@@ -189,7 +198,7 @@ let Paris = {
       this.custArr.push(this.customer);
   },
   getCookies: function(a, b) {
-    this.cookies.push(this.avgCookie * this.customer);
+    this.cookies.push(Math.round(this.avgCookie * this.customer));
   },
   
   //* final function to run/render it all
@@ -201,9 +210,11 @@ let Paris = {
       }
 
       //* Create elements and Display the values
+      let sectionBreak = document.createElement('section');
+      cityInfo.appendChild(sectionBreak);
       let customerUL = document.createElement('ul');
       customerUL.textContent = `${this.name}`;
-      cityInfo.appendChild(customerUL);
+      sectionBreak.appendChild(customerUL);
 
       for (let i = 0; i < hours.length; i++) {
         let customerLi = document.createElement('li');
@@ -240,7 +251,7 @@ let Lima = {
       this.custArr.push(this.customer);
   },
   getCookies: function(a, b) {
-    this.cookies.push(this.avgCookie * this.customer);
+    this.cookies.push(Math.round(this.avgCookie * this.customer));
   },
   
   //* final function to run/render it all
@@ -248,13 +259,15 @@ let Lima = {
       // * Calls functions to calculate
       for (let i = 0; i < hours.length; i++) {
         this.getNum();
-        this.getCookies()
+        this.getCookies();
       }
 
       //* Create elements and Display the values
+      let sectionBreak = document.createElement('section');
+      cityInfo.appendChild(sectionBreak);
       let customerUL = document.createElement('ul');
       customerUL.textContent = `${this.name}`;
-      cityInfo.appendChild(customerUL);
+      sectionBreak.appendChild(customerUL);
 
       for (let i = 0; i < hours.length; i++) {
         let customerLi = document.createElement('li');
