@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
+/*
+* * COLORS
+Base Color: #E7E092
+Accent Color: #E79692
+White
+Dark grey: #585646
+light grey: #fcfcfa
+
+*/
+
+
+* {
+  background-color: #E7E092;
+}
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size:xx-large;
+}
+
+header, nav, ul, header img, li {
+  display: flex;
+  padding-left: 15px;
+  align-self: flex-end;
+  background-color: #585646;
+  color: #fcfcfa;
+}
+
+li a {
+  background-color: #585646;
+  color: #fcfcfa;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+main {
+  font-family:Arial, Helvetica, sans-serif;
+  width: 90%;
+  margin: auto;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: larger;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+
+div {
+  padding: 10px;
+}
+
+#addresses {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+div {
+  width: 150px;
+}
+
+article figure{
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
