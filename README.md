@@ -9,8 +9,8 @@ Lab working with objects
 
 ### Lighthouse Accessibility Report Score
 
-* Provide a screenshot of your score after running a Lighthouse Accessibility report.
+![Lighthouse Report](/assests/Lighthouse%20report.png)
 
 ### Reflections and Comments
 
-* Update: Worked a bit more to connect the HTML files, make the sections, add the logo, etc. 
+* Learned so much in this project, and it was cool to problem-solve. It's still not the most beautiful or perfect website, but the focus was more on JavaScript in getting the sales page working. It's funny how something like a table seems so simple at first.
