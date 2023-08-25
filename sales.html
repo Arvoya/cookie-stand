@@ -26,7 +26,23 @@
   <h2>Store Locations with cookies sold</h2>
   <section id="city-info"></section>
 
-    <!-- ALL IN app.js -->
+   <form id="storeForm">
+    <fieldset>New Store Form:</fieldset>
+    <label for="newStore">Location</label>
+    <input type="text" name="newStore" id="newStore">
+    <br>
+    <label for="MinCust">Minimum Customers</label>
+    <input type="number" name="MinCust" id="MinCust">
+    <br>
+    <label for="MaxCust">Maximum Customers</label>
+    <input type="number" name="MaxCust" id="MaxCust">
+    <br>
+    <label for="newAvg">Cookie Average</label>
+    <input type="number" step="0.1" name="newAvg" id="newAvg">
+    <br>
+    <button type="submit">submit</button>
+   </form>
+
 
 </body>
 <script src="JavaScript/app.js"></script>

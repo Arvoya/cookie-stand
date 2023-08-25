@@ -6,6 +6,7 @@ let hours = ['6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:0
 
 // * JS Window
 let cityInfo = document.getElementById('city-info');
+let newForm = document.getElementById('storeForm');
 
 // * Initial Table with Time Header
 let tableH = document.createElement('table');
@@ -29,6 +30,58 @@ function renderAll() {
     cityArray[i].render();
   }
 }
+function formSubmition(event) {
+  event.preventDefault();
+  tableH.deleteRow(tableH.rows.length - 1);
+  let newLocation = event.target.newStore.value;
+  let newMin = event.target.MinCust.value;
+  let newMax = event.target.MaxCust.value;
+  let newAvg = event.target.newAvg.value;
+
+  let newStore = new CityStore(newLocation, +newMin, +newMax, +newAvg);
+
+  cityArray.push(newStore);
+  newStore.render();
+  newForm.reset();
+
+  function totalCookieRow() {
+
+
+
+    let totalRow = document.createElement('tr');
+    totalRow.textContent = 'Totals'
+    tableH.appendChild(totalRow);
+    let totalArr = []
+    let totalAdd = 0;
+  
+    for(let i = 0; i < hours.length; i++) {
+      
+      let totalRdata = document.createElement('td');
+      
+      for(let k = 0; k < cityArray.length; k++) {
+        totalAdd +=  (cityArray[k].cookies[i]);
+        // console.log(cityArray[k].cookies[i])
+      }
+      
+      totalArr.push(totalAdd);
+      totalRdata.textContent = totalArr[i];
+      totalRow.appendChild(totalRdata);
+      totalAdd = 0;
+      
+    }
+  
+    let Ftotal = 0;
+    let finalTotal = document.createElement('td');
+      for(let k = 0; k < cityArray.length; k++){
+        Ftotal +=cityArray[k].total
+      }
+    finalTotal.textContent = (Ftotal);
+    totalRow.appendChild(finalTotal);
+  
+  }
+  totalCookieRow();
+}
+newForm.addEventListener('submit', formSubmition);
 function totalCookieRow() {
   let totalRow = document.createElement('tr');
   totalRow.textContent = 'Totals'
@@ -61,6 +114,7 @@ function totalCookieRow() {
   totalRow.appendChild(finalTotal);
 
 }
+
 
 // * Object Constructor & Prototype methods
 function CityStore (location, minCust, maxCust, cookieAvg) {
