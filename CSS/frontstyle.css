@@ -72,6 +72,11 @@ article figure{
   justify-content: center;
 }
 
+#vision {
+  text-indent: 15px;
+  margin: 20px;
+}
+
 footer {
   display: flex;
   justify-content: center;
